@@ -80,12 +80,44 @@ table{
     text-align: center;
 }
 
-.list-inline li {
+.list-inline > li {
     display: inline-block;
     padding: 20px;
 }
 
+#sidebar {
+  position: fixed;
+  width: 300px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+#page-content {
+  margin-left: 300px;
+}
 
+#sidebar {
+    background-color: #384047;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 120px;
+    text-align: center;
+}
+
+#sidebar li {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#content {
+  margin-left: 150px;
+}
 
 
 
@@ -130,7 +162,7 @@ body {
   position: relative;
   width: 550px;
   height: 365px;
-  margin: 15% auto;
+  margin: 2% auto;
   -webkit-animation: shake 7s infinite;
           animation: shake 7s infinite;
 }
